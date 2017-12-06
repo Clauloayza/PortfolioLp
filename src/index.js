@@ -2,17 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-// import store from './Store/Store';
-// import {Provider} from 'redux-zero/react'
+import store from './Store/Store';
+import {Provider} from 'redux-zero/react'
 
 const student = 'Clau'
 
-const Index = ({student}) => {
+const Index = () => {
     return(
-
-        <App student={student}/>
+        <Provider store={store}>
+            <App />
+        </Provider>
     )
 }
 
-ReactDOM.render(<Index student={student}/>, document.getElementById('root'));
+ReactDOM.render(<Index />, document.getElementById('root'));
 registerServiceWorker();

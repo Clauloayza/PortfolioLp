@@ -6,11 +6,9 @@ import { Skills } from './Components/Skills';
 import { Portfolio } from './Components/Portfolio';
 import {Contact} from './Components/Contact';
 
-
-const App = ({student}) => {
+const App = ({portfolio}) => {
   return (
     <div>
-      <p>Hola soy {student}</p>
       <Header />
       <About />
       <Skills/>
@@ -20,7 +18,7 @@ const App = ({student}) => {
   );
 }
 
-export default App
-// const mapToProps = ({personal, info, socials, repos}) => ({personal, info, socials, repos});
-// export default connect(mapToProps)(App);
+// -}export default App
+const mapToProps = ({portfolio}) => ({portfolio});
+export default connect(mapToProps)(App);
 
