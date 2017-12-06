@@ -7,9 +7,10 @@ import { Portfolio } from './Components/Portfolio';
 import {Contact} from './Components/Contact';
 
 
-const App = ({}) => {
+const App = ({student}) => {
   return (
     <div>
+      <p>Hola soy {student}</p>
       <Header />
       <About />
       <Skills/>
