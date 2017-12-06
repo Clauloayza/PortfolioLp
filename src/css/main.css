@@ -1,24 +1,25 @@
 .header {
-  background-image: url("");
-  background-position: 50% 0px;
-  height: 662px;
+  background-image: url('../Img/portada.jpg');
+  background-position: 100%;
+  width: 100%;
+  height: 650px;
   background-attachment: fixed;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-position-y: -130px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  .header .name {
-    font-family: "", cursive;
-    color:;
-    font-size: 3.5em;
-    padding-top: 15%; }
-  .header .title {
-    font-family: ;
-    background-image: url("../img/");
+  background-size: cover;
+}
+.header .name {
+    color:rgb(228, 224, 227);
+    font-size: 3.4em;
+    padding-top: 30%; }
+.header .title {
+    color: rgba(255, 45, 189, 0.96);
+    font-weight: 600;
     font-size: 18px;
     line-height: 62px;
     width: 277px;
@@ -32,32 +33,43 @@
     text-align: center;
     text-decoration: none;
     border: 0;
-    color:;
     background-color: transparent; }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .header {
-    height: 566px; }
-    .header .name {
-      padding-top: 0%; } }
-.about {
-  padding-top: 5%;
-  height: 100vh; }
-  .about .title {
-    font-family: ;
+#about{
+  height: 100vh;
+}
+
+#about .text-vertical{
+  width:5px;
+  word-wrap: break-word;
+  text-align:center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 40px;
+  margin-top: 40%;
+  color: #3B3B3B;
+}
+#about .aboutme{
+  margin-left: 40px;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgba(255, 45, 189, 0.96);
+}
+#about .me{
+  color: #746F6F;
+}
+#about .title {
     text-transform: uppercase;
     letter-spacing: 3px; }
-  .about .photo {
-    margin-left: 25%;
+#about .perfil2 {
+    margin-left: 15%;
     width: auto;
-    height: 550px; }
-  .about .description {
-    padding-right: 20%;
-    padding-top: 10%;
-    font-family: ; }
-    .about .description .icons {
-      background-color:66, 1, 1;
-      color: ;
+    height: 450px;
+}
+#about .description {
+   margin-top:10%;
+    padding-right: 20%;}
+#about .description .icons {
       width: 100%;
       height: 80px;
       border-radius: 50%;
@@ -66,7 +78,6 @@
       margin-right: 10px;
       font-size: 0.8em; }
     .about .description .resume {
-      background-image: url("../img/");
       font-size: 18px;
       line-height: 62px;
       width: 277px;
@@ -84,14 +95,9 @@
       
 
 a {
-  color: #ffe042; }
+  color: rgba(255, 66, 224, 0.52); }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .about {
-    padding-top: 5%;
-    height: 62vh; }
     .about .title {
-      font-family:;
       text-transform: uppercase;
       letter-spacing: 3px; }
     .about .description {
@@ -100,28 +106,63 @@ a {
       text-orientation: justify; }
     .about .icons {
       margin-right: 20px;
-      font-size: 1.2em; } }
-.skills .all {
-  width: 100%; }
-
+      font-size: 1.2em; } 
+.skills{
+  width: 100%;
+  background: #3F3B3B;
+}
+.skills .titleSkills{
+  color: #fff;
+}
 ul.no-bullets {
   list-style-type: none;
   margin: 0;
   padding: 150px;
   padding-top: 50px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  color: #fff;
+  font-weight: 500;
+ }
 
+ .skills .fa-circle{
+   margin-right: 2px;
+   color: #F595D8;
+ }
 ul > li {
   min-height: 30px;
   padding: 3px 0; }
-
+.skills .skillsImg{
+  width: 450px;
+  height: 430px;
+}
+.skills .myskills{
+  margin-left: 100px;
+  font-weight: 800;
+  font-size: 40px;
+  padding-top: 50px;
+  color: rgba(255, 45, 189, 0.96);
+}
+.skills .skillsmatch{
+  color: #D6D3D3;
+}
+.skills .text-vertical{
+  width:5px;
+  word-wrap: break-word;
+  text-align:center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 40px;
+  float: right;
+  margin-top: 10%;
+  color: #FCFCFC;
+}
 .abilities ul > li .ability-title {
   display: inline-block;
   width: 60%; }
 
 .ability-score {
   float: right;
-  color: #ffe042;
+  color: #E48BD8;
   font-size: 14px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -129,7 +170,6 @@ ul > li {
   transition: all .3s; }
 
 .photoSmile {
-  background-image: url("../img/");
   height: 300px;
   background-attachment: fixed;
   position: relative;
@@ -142,41 +182,27 @@ ul > li {
   background-position-y: -260px; }
 
 .titleSkills {
-  font-family: Dosis,sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px !important;
   padding-top: 10%;
   z-index: 2; }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .photoSmile {
-    height: 130px;
-    background-position-y: -140px; }
 
   ul.no-bullets {
-    padding: 68px; } }
+    padding: 68px; } 
 .portfolioImg {
   width: 100%;
   height: 150px !important;
   -webkit-filter: grayscale(1);
-  filter: gray;
-  -webkit-transition: all .5s ease-in-out; }
-
-.portfolioImg:hover {
-  -webkit-filter: grayscale(0);
-  filter: gray;
-  -webkit-transition: all .5s ease-in-out; }
+  filter: gray; }
 
 .iconSee, .iconCode {
   font-size: 2em;
   padding-top: 1.5px;
   margin-right: 2%; }
 
-.titlePortfolio {
-  font-family:  }
 
 .photoContact {
-  background-image: url("../img/");
   height: 662px;
   background-attachment: fixed;
   position: relative;
@@ -201,26 +227,16 @@ ul > li {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color:;
-  background-color: ;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
-
+  border-radius: 4px;}
 .formContact {
   padding-top: 20px; }
 
 .titleContact {
-  padding-top: 180px;
-  font-family:; }
+  padding-top: 180px;}
 
 .btnSend {
-  background-image: url("../img/");
   font-size: 18px;
   line-height: 62px;
   width: 277px;
@@ -234,11 +250,9 @@ ul > li {
   text-align: center;
   text-decoration: none;
   border: 0;
-  color: ;
   background-color: transparent; }
 
 .phrase {
-  background-color: ;
   text-align: center;
   height: 20vh;
   font-family: "Dosis", sans-serif; }
@@ -256,17 +270,6 @@ ul > li {
   width: 120px;
   margin-left: 25px; }
 
-.badgetTitle {
-  background-color:;
-  padding: 30px;
-  font-family: ; }
-
 .badgetIcon {
   background-color: white;
   margin-bottom: 90px; }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .insignia {
-    width: 100px;
-    margin-left: 25px;
-    padding-top: 20px; } }

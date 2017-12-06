@@ -24,6 +24,12 @@ export const Contact = () => {
                                     id="exampleInputPassword1"
                                     placeholder="Asunto"/>
                             </div>
+                            <div className="form-group">
+                                <textarea
+                                    type="text"
+                                    placeholder="Message"
+                                    id=""/>
+                            </div>
                            
                         </form>
                     </Col>

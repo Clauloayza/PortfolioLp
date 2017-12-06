@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {Col, Grid, Row} from 'react-bootstrap';
+import React, {Component} from 'react'; 
 import '../css/main.css';
-
+import {Col, Grid, Row, Image} from 'react-bootstrap';
 export const Header = () => {
     return (
         <section className="header text-center" id="header">
