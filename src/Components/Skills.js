@@ -7,7 +7,7 @@ export const Skills = () => {
     return (
         <Row className="skills all">
             
-            <Col md={4} sm={4} lg={4} xs={12}>
+            <Col md={4} sm={12} lg={4} xs={12}>
             <ul className="no-bullets">
                     <li>
                         <span className="ability-title">REDUX</span>
@@ -111,12 +111,12 @@ export const Skills = () => {
                     </li>
                 </ul>
             </Col>
-            <Col md={4} sm={4} lg={4} xs={12}>
+            <Col md={4} sm={12} lg={4} xs={12}>
                 <div>
                     <img src={skills} alt="" className="skillsImg" responsive/>
                 </div>
             </Col>
-            <Col md={4} sm={4} lg={4} xs={12}>
+            <Col md={4} sm={12} lg={4} xs={12}>
             <div>
                     <p className="text-vertical">View Skills</p>
                     <p className="myskills">MY</p>
